@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.header{
+    background-color: rgb(238, 229, 229);
+    
+    padding: 15px;
+    margin: .1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.header .logo{
+    margin-left: 2%;
+    color: black;
+    font-family: "Unna", serif;
+  font-weight: 700;
+  
+    font-size: 40px;
+}
+
+.header .nav{
+    margin-right: 5%;
+}
+
+.header .nav a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 20px;
+    color: black;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.row .article{
+    background-color: whitesmoke;
+    margin: .1%;
+    flex: 70%;
+}
+
+.row .article .section{
+padding: 75px;
+display: flex;
+align-items: center;
+flex-direction: column;
+align-items: center; 
+text-align: center;
+
+}
+
+.row .article .section .img img{
+    width: 100%;
+    justify-content:center;
+ 
+}
+
+.row .article .section-info{
+    padding: 50px;
+    justify-content:center;
+    
+}
+
+.row .article .section-info h2,
+.row .article .section-info p{
+    padding: 10px  0;
+    text-align:justify;
+    justify-content:center;
+    font-size: 24px;
+}
+
+
+
+.row .aside{
+  
+    flex-direction: column;
+    display: flex;
+    justify-content:center;
+    width: 250px;
+    margin: .1%;
+    align-items: center;
+}
+
+.aside {
+    background-color: rgb(238, 229, 229);
+    width: 250px;
+    margin: 0.1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    padding: 15px; 
+}
+
+
+
+.aside .aside-new img{
+    width: 45%;
+    padding-bottom: 1px;
+    justify-content:center
+}
+
+
+.aside .hastag,
+.aside .aside-new,
+.aside h2{
+    padding: 1px;
+   
+
+} 
+
+.footer{
+    background-color: black;
+    padding: 18px;
+    margin: .1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p{
+    color:whitesmoke;
+    font-size: 16px;   
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 3%;
+}
+
+.item{
+    border-radius: 10px;
+    padding: 8%;
+}
+
+.item:hover{
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 20);
+}
+
+.info-producto{
+    padding: 8px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900px;
+}
+
+.info-producto button{
+    border: none;
+    background: none;
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    cursor: pointer;
+
+}
+
+
+.item .img{
+    width: 100px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
